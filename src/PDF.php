@@ -74,7 +74,7 @@ class PDF
 	public function setPaper($paper, $orientation = 'portrait')
 	{
 
-		$this->dompdf->setPaper($paper)->setOrientation($orientation);
+		$this->dompdf->setPaper($paper, $orientation);
 		$this->orientation = $orientation;
 		$this->paper = $paper;
 
